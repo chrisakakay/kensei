@@ -2,11 +2,12 @@
 
 It's a small client library to host a blog on github.io.
 
-It was inspired by jekyll.
+It was inspired by [jekyll](https://github.com/jekyll/jekyll).
 
-It is depending on showdown.
+It is depending on [showdown](https://github.com/showdownjs/showdown).
 
-# How to use
+
+## How to use
 
 - Create an index.html
 - Add this container html snippet
@@ -30,30 +31,26 @@ var posts = [
     }
 ];
 
-Kensei.app.init({
-    posts: posts,
-    disqus: {
-        pageUrl: 'http://chrisakakay.github.io',
-        disqusId: 'your-disquss-id'
-    }
-});
+Kensei.app.init({ posts: posts });
 ```
-- Create a posts folder
-- And create the posts you added in the posts variable (ex: 2018-01-01-my-new-blog.md)
+- Create a __posts__ folder
+- And create the posts you added in the posts variable (ex: __2018-01-01-my-new-blog.md__)
 - Thats it
 
-# Notes
 
-Kensei relies on showdown (a markdown parser) and kensei.bundle.js contains it by default.
+## Notes
 
-You can use kense.min.js which is without showdown, but you have to include showdown yourself.
+The bundle __kensei.bundle.js__ contains showdown by default.
 
-Kensei relies on showdown version 1.4.3 because it is small.
+You can use __kense.min.js__ which is just the kensei library, but you have to include showdown yourself.
 
-# API
+Showdown version 1.4.3 because it is small.
+
+
+## API
 
 Kensei.app.init can take some options like:
-* posts (an array of the visible posts)
-* pagination.postPerPage (optional, default is 4)
-* disqus.pageUrl (optional)
-* disqus.disqusId (optional)
+* __posts__ (an array of the visible posts)
+* __pagination.postPerPage__ _(optional, default is 4)_
+* __disqus.pageUrl__ _(optional)_
+* __disqus.disqusId__ _(optional)_
