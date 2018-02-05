@@ -4,7 +4,9 @@
   "description": "Small client library for github.io",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pre-build": "uglifyjs --compress --mangle --output ./dist/kensei.min.js -- kensei.js",
+    "build": "concat -o ./dist/kensei.bundle.js ./dist/showdown_1.4.3_.min.js ./dist/kensei.min.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/chrisakakay/kensei/issues"
   },
-  "homepage": "https://github.com/chrisakakay/kensei#readme"
+  "homepage": "https://github.com/chrisakakay/kensei#readme",
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "uglify-js": "^3.3.9"
+  }
 }
