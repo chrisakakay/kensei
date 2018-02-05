@@ -1,7 +1,9 @@
 # Kensei
 
 It's a small client library to host a blog on github.io.
+
 It was inspired by jekyll.
+
 It is depending on showdown.
 
 # How to use
@@ -43,7 +45,9 @@ Kensei.app.init({
 # Notes
 
 Kensei relies on showdown (a markdown parser) and kensei.bundle.js contains it by default.
+
 You can use kense.min.js which is without showdown, but you have to include showdown yourself.
+
 Kensei relies on showdown version 1.4.3 because it is small.
 
 # API
