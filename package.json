@@ -1,0 +1,19 @@
+{
+  "name": "kensei",
+  "version": "0.1.0",
+  "description": "Small client library for github.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisakakay/kensei.git"
+  },
+  "author": "Krisztian Nagy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisakakay/kensei/issues"
+  },
+  "homepage": "https://github.com/chrisakakay/kensei#readme"
+}
