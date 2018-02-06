@@ -12,9 +12,7 @@ It is depending on [showdown](https://github.com/showdownjs/showdown).
 - Create an index.html
 - Add this container html snippet
 ```html
-<div id="content-container">
-    <div id="content"></div>
-</div>
+<div id="content"></div>
 ```
 - Add the script for kensei
 ```html
@@ -51,6 +49,7 @@ Showdown version 1.4.3 because it is small.
 
 Kensei.app.init can take some options like:
 * __posts__ (an array of the visible posts)
+* __container__ (optional, container for the posts to be rendered in, ex.: document.getElementById('my-container'))
 * __pagination.postPerPage__ _(optional, default is 4)_
 * __disqus.pageUrl__ _(optional)_
 * __disqus.disqusId__ _(optional)_
